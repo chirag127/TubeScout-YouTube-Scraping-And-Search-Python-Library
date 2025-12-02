@@ -1,21 +1,25 @@
-MIT License
+Copyright (C) 2025 chirag127
 
-Copyright (c) 2021 Hitesh Kumar Saini
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+-----------------------------------------------------------------------------------
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**LICENSE DEFINITION:**
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+*   **Attribution (BY):** You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+*   **NonCommercial (NC):** You may not use the material for commercial purposes.
+*   **No Derivatives (ND) - IMPLIED for this specific context, but not explicitly stated in CC BY-NC 4.0 standard:** While not a strict part of CC BY-NC 4.0, the spirit of archival and non-maintenance implies that modifications for commercial gain or redistribution as a primary product are not permitted. The intent is for educational, historical, or personal use.
+
+-----------------------------------------------------------------------------------
+
+**DISCLAIMER:**
+
+This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+
+This project is an **ARCHIVED RETIRED PRODUCT**. It is not actively maintained and may contain outdated practices, security vulnerabilities, or may not function with current systems or APIs. Use at your own risk. The original author and contributors are not responsible for any issues arising from its use.
+
+-----------------------------------------------------------------------------------
+
+**USE OF YOUTUBE DATA:**
+
+This library scrapes data from YouTube without using the official API. YouTube's Terms of Service generally prohibit unauthorized scraping. By using this library, you acknowledge and agree that you are solely responsible for complying with YouTube's Terms of Service and any applicable laws. The creators of this library are not responsible for any violations incurred by the user.
