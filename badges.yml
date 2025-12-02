@@ -1,0 +1,32 @@
+badges:
+  - name: Build Status
+    icon: github actions
+    color: brightgreen
+    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib/actions/workflows/ci.yml
+    alt: Build Status
+  - name: Code Coverage
+    icon: codecov
+    color: brightgreen
+    url: https://codecov.io/gh/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib
+    alt: Code Coverage
+  - name: Python Version
+    icon: python
+    color: blue
+    version: 3.10+
+    alt: Python Version
+  - name: Linting
+    icon: ruff
+    color: orange
+    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib
+    alt: Linting Status
+  - name: License
+    icon: law
+    color: lightgrey
+    text: CC BY-NC 4.0
+    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib/blob/main/LICENSE
+    alt: License
+  - name: GitHub Stars
+    icon: github
+    color: yellow
+    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib
+    alt: GitHub Stars
