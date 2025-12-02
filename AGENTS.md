@@ -6,7 +6,7 @@
 **Output Standard:** Deliver **EXECUTION-ONLY** results. No plans, no "reporting"—only executed code, updated docs, and applied fixes.
 **Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
----
+--- 
 
 ## 2. INPUT PROCESSING & COGNITION
 *   **SPEECH-TO-TEXT INTERPRETATION PROTOCOL:**
@@ -19,68 +19,53 @@
     *   **Validation:** Use `docfork` to verify *every* external API signature.
     *   **Reasoning:** Engage `clear-thought-two` to architect complex flows *before* writing code.
 
----
+--- 
 
 ## 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
-**Directives:** Detect the project type (`pyproject.toml` for Python) and apply the corresponding **Apex Toolchain**. This repository, `YouTubeDataScraper-YouTubeVideoSearch-Python-Lib`, is a Python-based data scraping tool.
+**Directives:** Detect the project type (`pyproject.toml` for Python) and apply the corresponding **Apex Toolchain**. This repository, `TubeScout-YouTube-Scraping-And-Search-Python-Library`, is a Python-based data retrieval library. As it is archived, the focus is on preservation and clarity, not active development or advanced AI integration.
 
-*   **PRIMARY SCENARIO: DATA / SCRIPTS / AI (Python)**
+*   **PRIMARY SCENARIO: DATA / SCRIPTS / LIBRARY (Python)**
     *   **Stack:** This project leverages **Python 3.10+**. Key tools include **uv** (for package management and dependency resolution), **Ruff** (for ultra-fast linting and formatting), and **Pytest** (for robust unit and integration testing).
-    *   **Architecture:** Adheres to a **Modular Monolith** pattern, ensuring clear separation of concerns for features like web scraping, data extraction, and CLI interface, while maintaining a unified deployment. Prioritize robust error handling, rate limiting, and compliance with website `robots.txt` protocols.
-    *   **Web Scraping Framework:** Leverages `BeautifulSoup4` and `Requests` (or `httpx` for async operations) for efficient and reliable web scraping. Implement robust parsing logic and data validation.
-    *   **CLI Framework:** Uses `Click` or similar for a powerful and intuitive command-line interface.
+    *   **Architecture:** Follows a **Modular Library** pattern, emphasizing clear separation of concerns for scraping, search, and data retrieval functions. Prioritize code clarity, documentation, and maintainability for archival purposes.
+    *   **CLI Framework:** Not applicable for this library's primary function; however, if a CLI were to be added, `Click` or `Typer` would be considered.
 
 *   **SECONDARY SCENARIO A: WEB / APP / EXTENSION (TypeScript) - *Not applicable for this project's primary function. Reference only for potential future web-based extensions.***
     *   **Stack:** TypeScript 6.x (Strict), Vite 7 (Rolldown), Tauri v2.x (Native), WXT (Extensions).
     *   **State:** Signals (Standardized).
 
----
+--- 
 
-## 4. DEVELOPMENT METHODOLOGY & VERIFICATION
-*   **CODE QUALITY & STANDARDS:**
-    *   **DRY (Don't Repeat Yourself):** Abstract common functionalities into reusable modules and functions.
-    *   **SOLID Principles:** Ensure maintainable and scalable code.
-    *   **YAGNI (You Ain't Gonna Need It):** Focus on current requirements; avoid over-engineering.
-    *   **Error Handling:** Implement comprehensive `try-except` blocks, graceful degradation, and informative error messages.
-    *   **Logging:** Utilize Python's `logging` module for detailed event tracking and debugging.
-*   **TESTING STRATEGY:**
-    *   **Unit Tests:** Comprehensive unit tests for all core modules and utility functions using `Pytest`.
-    *   **Integration Tests:** Tests to verify interactions between different components, especially data parsing and CLI commands.
-    *   **Scraping Tests:** Mocked tests for scraping logic to ensure parsing correctness without live network requests. Consider carefully designed live tests for critical website integrations, respecting rate limits and terms of service.
-    *   **Coverage:** Aim for **90%+ code coverage** for critical components.
+## 4. CODE VERIFICATION & QUALITY GATES
 *   **LINTING & FORMATTING:**
-    *   **Tool:** **Ruff** is the single source of truth for linting, formatting, and code organization.
-    *   **Configuration:** All `pyproject.toml` files must be meticulously configured.
-    *   **Execution:** All code contributions must pass Ruff checks before committing.
+    *   **Tool:** **Ruff** (Integrated via `pyproject.toml`).
+    *   **Execution:** `uv run ruff check .` and `uv run ruff format .`
+    *   **Purpose:** Enforces a consistent, clean, and idiomatic Python codebase, adhering to PEP 8 standards and project-specific rules defined in `pyproject.toml`.
+*   **TESTING FRAMEWORK:**
+    *   **Tool:** **Pytest**.
+    *   **Execution:** `uv run pytest`
+    *   **Purpose:** Ensures code correctness, validates module functionality, and acts as living documentation for how components are expected to behave. All tests must be deterministic and cover edge cases.
+*   **DEPENDENCY MANAGEMENT:**
+    *   **Tool:** **uv**.
+    *   **Execution:** `uv sync` for installing dependencies, `uv add <package>` for adding new ones, `uv pip compile` (or equivalent) for generating lock files.
+    *   **Purpose:** Manages project dependencies efficiently, ensuring reproducible builds and clear versioning.
 
----
+--- 
 
-## 5. RELEASE & DEPLOYMENT PROTOCOL
-*   **VERSIONING:** Utilize Semantic Versioning (SemVer).
-*   **CI/CD:** GitHub Actions (`ci.yml`) will orchestrate automated testing, linting, and packaging.
-*   **PACKAGE MANAGEMENT:** `uv` will manage dependencies and packaging for distribution (e.g., to PyPI).
+## 5. ARCHIVAL & MAINTENANCE PROTOCOL
+*   **ARCHIVED STATUS:** This repository is **ARCHIVED**. All development has ceased. The project is in read-only mode.
+*   **RETROACTIVE PROFESSIONALISM:** Even as archived, the project must maintain the highest professional standards in its documentation and metadata.
+*   **LEGACY VALUE:** The codebase represents a valuable historical artifact demonstrating web scraping techniques for YouTube prior to stricter API enforcement or alternative methods.
+*   **NO ACTIVE DEVELOPMENT:** Users should **NOT** expect updates, bug fixes, or new features. Contributions will not be merged.
 
----
+--- 
 
-## 6. SECURITY MANDATES
-*   **DATA PRIVACY:** NEVER store or expose sensitive user data. If API keys or credentials are required, use environment variables or secure secret management tools.
-*   **RATE LIMITING:** Implement aggressive rate limiting and backoff strategies when interacting with external websites to avoid IP bans and comply with terms of service.
-*   **DEPENDENCY SCANNING:** Regularly scan dependencies for known vulnerabilities.
-*   **ROBOTS.TXT:** **STRICTLY ADHERE** to the `robots.txt` file of any website being scraped.
-*   **Terms of Service:** Be aware of and comply with the Terms of Service for any website you are scraping. Unauthorized scraping can lead to legal issues.
+## 6. COMMUNICATION & COLLABORATION (LEGACY)
+*   **CONTRIBUTING:** Archived. See `.github/CONTRIBUTING.md` for historical guidelines.
+*   **ISSUES:** Archived. Use for historical reference only. New issues will not be addressed.
+*   **PULL REQUESTS:** Archived. New pull requests will not be considered.
 
----
+--- 
 
-## 7. EMERGENCY RESPONSE PROTOCOL
-*   **IDENTIFY:** Immediately recognize unexpected behavior or security breaches.
-*   **CONTAIN:** Halt affected processes; isolate vulnerable components.
-*   **ERADICATE:** Address the root cause (bug fix, vulnerability patch).
-*   **RECOVER:** Restore normal operations; verify system integrity.
-*   **POST-MORTEM:** Document lessons learned to prevent recurrence.
-
----
-
-## 8. APEX PROJECT MAINTENANCE GUIDELINES
-*   **REPO URL:** `https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib`
-*   **CONTINUOUS IMPROVEMENT:** Regularly review and update dependencies, security patches, and architectural patterns based on industry best practices and project evolution.
-*   **DOCUMENTATION:** Maintain up-to-date `README.md`, `AGENTS.md`, and other relevant documentation.
+## 7. RESOURCE LINKS (ARCHIVAL USE ONLY)
+*   **Repository:** `https://github.com/chirag127/TubeScout-YouTube-Scraping-And-Search-Python-Library`
+*   **License:** `https://github.com/chirag127/TubeScout-YouTube-Scraping-And-Search-Python-Library/blob/main/LICENSE` (CC BY-NC 4.0)
