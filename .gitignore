@@ -1,15 +1,38 @@
-# vscode
+# Byte-compiled / optimized / memory-mapped Python files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
 
-.vscode
+# Distribution / packaging
+*.egg-info/
+.cache/
+*.egg
+build/
+dist/
 
-# python
+# Virtual environment
+.venv/
+virtualenv/
+venv/
+env/
 
-__pycache__
-dist
+# IDE / Editor specific
+.vscode/
+.idea/
+*.iml
 
-# testing
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
-test.py
-test2.py
-*.json
-*.html
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Ruff cache
+.ruff_cache/
