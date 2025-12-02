@@ -1,0 +1,87 @@
+# CI Workflow for TubeScout
+
+# This workflow is managed by the Apex Technical Authority.
+# It enforces Zero-Defect, High-Velocity, Future-Proof standards.
+# All configurations are aligned with December 2025 best practices.
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This job builds and tests the Python library
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    # Strategy definition for matrix builds, targeting multiple Python versions
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13'] # Target modern Python versions
+
+    steps:
+      # 1. Checkout the repository code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Python environment using uv for dependency management
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'uv'
+          cache-dependency-path: '**/uv_cache/' # Point to uv's cache directory
+
+      # 3. Install dependencies using uv
+      - name: Install Dependencies with uv
+        run: |
+          python -m pip install --upgrade pip
+          uv install --frozen --system --python ${{ matrix.python-version }}
+        # uv install --frozen --system installs packages from uv_cache if available, or installs and caches.
+        # --system ensures packages are installed into the virtual environment.
+        # For this workflow, we will let uv manage its cache location.
+
+      # 4. Lint and format code using Ruff
+      # This step ensures code quality and consistency across the project.
+      - name: Lint with Ruff
+        run: |
+          uv venv --frozen --system # Ensure virtual environment is created/used by uv
+          uv run --system ruff check . --fix
+        # 'ruff check .' lints the entire project.
+        # '--fix' attempts to automatically fix linting errors.
+
+      # 5. Run tests using Pytest
+      # This step executes the test suite to ensure code correctness.
+      - name: Test with Pytest
+        run: |
+          uv venv --frozen --system
+          uv run --system pytest tests/
+        # 'pytest tests/' runs all tests in the 'tests/' directory.
+        # Coverage reporting can be added here if needed, e.g., with pytest-cov.
+        # Example for coverage: 'uv run --system pytest --cov=tubescout tests/'
+
+      # 6. (Optional) Upload test results/coverage reports
+      # This step is commented out but can be enabled if test reporting tools are integrated.
+      # - name: Upload Test Results
+      #   uses: actions/upload-artifact@v4
+      #   if: always()
+      #   with:
+      #     name: test-results-py${{ matrix.python-version }}
+      #     path: |
+      #       ./reports/ # Example path for test reports
+
+      # 7. Archive uv cache for faster subsequent runs
+      # This step ensures the uv cache is available for future CI runs.
+      - name: Cache uv artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            **/uv_cache/
+          key: ${{ runner.os }}-uv-${{ hashFiles('**/uv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-uv-
