@@ -1,32 +1,27 @@
-badges:
-  - name: Build Status
-    icon: github actions
-    color: brightgreen
-    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib/actions/workflows/ci.yml
-    alt: Build Status
-  - name: Code Coverage
-    icon: codecov
-    color: brightgreen
-    url: https://codecov.io/gh/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib
-    alt: Code Coverage
-  - name: Python Version
-    icon: python
-    color: blue
-    version: 3.10+
-    alt: Python Version
-  - name: Linting
-    icon: ruff
-    color: orange
-    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib
-    alt: Linting Status
-  - name: License
-    icon: law
-    color: lightgrey
-    text: CC BY-NC 4.0
-    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib/blob/main/LICENSE
-    alt: License
-  - name: GitHub Stars
-    icon: github
-    color: yellow
-    url: https://github.com/chirag127/YouTubeDataScraper-YouTubeVideoSearch-Python-Lib
-    alt: GitHub Stars
+build_status:
+  - provider: github-actions
+    workflow_name: CI
+    branch: main
+    image_url: https://github.com/chirag127/TubeScout-YouTube-Scraping-And-Search-Python-Library/actions/workflows/ci.yml/badge.svg
+
+coverage:
+  - provider: codecov
+    branch: main
+    image_url: https://codecov.io/github/chirag127/TubeScout-YouTube-Scraping-And-Search-Python-Library/branch/main/graphs/badge.svg
+
+tech_stack:
+  - provider: language
+    language: Python
+    image_url: https://img.shields.io/badge/Python-3.10%2B-blue.svg
+  - provider: linter
+    linter: Ruff
+    image_url: https://img.shields.io/badge/Linter-Ruff-FF0000.svg
+
+license:
+  - provider: license
+    license: CC BY-NC 4.0
+    image_url: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgray.svg
+
+stars:
+  - provider: github-stars
+    image_url: https://img.shields.io/github/stars/chirag127/TubeScout-YouTube-Scraping-And-Search-Python-Library?style=flat-square
