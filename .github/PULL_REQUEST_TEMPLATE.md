@@ -1,44 +1,42 @@
 # Pull Request Template
 
-## Description
+## 🚀 PR Type
 
-Please provide a clear and concise description of the changes introduced by this pull request.
+*   [ ] Bug fix
+*   [ ] New feature
+*   [ ] Refactor
+*   [ ] Documentation update
+*   [ ] Chore (build, CI, etc.)
 
-## Related Issue(s)
+## 📝 Description
 
-Closes #
+<!-- Please provide a concise description of the changes introduced in this pull request. -->
 
-## Type of Change
+## 💡 Motivation and Context
 
-<!-- Please mark the relevant options with an [x] -->
+<!-- Why are these changes necessary? Provide any context that might help reviewers understand the purpose of this PR. -->
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] Documentation update
-- [ ] Refactoring / Code style update
-- [ ] Performance improvements
-- [ ] Test update
-- [ ] Other (please specify):
+## 🔗 Related Issues/Tasks
 
-## Checklist
+<!-- Link any related issues or tasks here. E.g., `Closes #123`, `Relates to #456` -->
 
-<!-- Please tick off the following steps. If you are unsure about any of them, don't hesitate to ask. -->
+## ✅ Checks
 
-- [ ] I have read the **Contributing Guidelines** (`.github/CONTRIBUTING.md`).
-- [ ] My code follows the code style of this project.
-- [ ] I have performed a self-review of my own code.
-- [ ] I have commented my code, particularly in hard-to-understand areas.
-- [ ] I have made corresponding changes to the documentation (if applicable).
-- [ ] My changes generate no new warnings or errors in my IDE and CI checks.
-- [ ] I have added tests that prove my fix is effective or that my feature works.
-- [ ] New and existing unit tests pass locally with my changes.
-- [ ] Any dependent components have been updated or are not needed.
+<!-- Ensure that you have performed the following checks before submitting your PR: -->
 
-## Further Information
+*   [ ] My code follows the code style of this project.
+*   [ ] I have performed a self-review of my own code.
+*   [ ] I have commented my code, particularly in hard-to-understand areas.
+*   [ ] I have made corresponding changes to the documentation.
+*   [ ] My changes generate no new warnings.
+*   [ ] I have added tests that prove my fix is effective or that my feature works.
+*   [ ] New and existing unit tests pass locally with my changes.
+*   [ ] Any dependent changes have been merged and published.
 
-Provide any additional context or information that might be helpful to the reviewer.
+## 📸 Screenshots (if applicable)
 
-## Screenshots (if applicable)
+<!-- If your changes affect the UI, please provide screenshots to help reviewers. -->
 
-<!-- Add screenshots to help explain your changes -->
+## ℹ️ Additional Information
+
+<!-- Add any other information that might be helpful for reviewers. -->
